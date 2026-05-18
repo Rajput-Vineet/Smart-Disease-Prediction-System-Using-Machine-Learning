@@ -1,8 +1,8 @@
 --only-binary=:all:
 
-streamlit==1.32.0
-pandas>=2.3.3
-numpy
+streamlit
+pandas
+numpy<2
 scikit-learn
 matplotlib
-pillow>=9.0.0
+pillow
