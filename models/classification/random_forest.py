@@ -80,6 +80,7 @@ plt.ylabel("Actual")
 plt.show()
 
 
+
 # Accuracy
 accuracy = accuracy_score(y_test, y_pred)
 print("Accuracy:", accuracy)
