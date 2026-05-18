@@ -1,8 +1,6 @@
---only-binary=:all:
-
 streamlit
 pandas
-numpy<2
+numpy
 scikit-learn
 matplotlib
 pillow
