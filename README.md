@@ -3,6 +3,8 @@
 ## 📌 Project Overview
 This project is a Machine Learning-based Disease Diagnosis System that predicts diseases based on patient symptoms and clinical parameters. The system integrates multiple ML techniques including classification, regression, clustering, and association rule mining. A user-friendly Streamlit web application is developed to provide real-time predictions.
 
+🔗 Live App: https://smart-disease-prediction-system-using-machine-learning-4gw8xid.streamlit.app
+
 ## 🚀 Features
 - Predict disease using patient inputs  
 - Interactive UI built with Streamlit  
