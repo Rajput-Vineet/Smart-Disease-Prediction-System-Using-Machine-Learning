@@ -7,10 +7,10 @@ import re
 # LOAD FILES
 # -------------------------------
 
-model = pickle.load(open("model.pkl", "rb"))
-scaler = pickle.load(open("scaler.pkl", "rb"))
-encoders = pickle.load(open("encoders.pkl", "rb"))
-feature_columns = pickle.load(open("feature_columns.pkl", "rb"))
+model = pickle.load(open("saved_models/model.pkl", "rb"))
+scaler = pickle.load(open("saved_models/scaler.pkl", "rb"))
+encoders = pickle.load(open("saved_models/encoders.pkl", "rb"))
+feature_columns = pickle.load(open("saved_models/feature_columns.pkl", "rb"))
 
 # -------------------------------
 # PAGE CONFIG
