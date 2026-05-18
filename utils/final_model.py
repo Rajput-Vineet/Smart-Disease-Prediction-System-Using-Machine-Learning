@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix, roc_auc_score
 
 # Load dataset
-df = pd.read_csv("disease_diagnosis.csv")
+df = pd.read_csv("dataset/disease_diagnosis.csv")
 
 # Preprocessing
 df = df.drop("Patient_ID", axis=1)
