@@ -7,6 +7,7 @@ from sklearn.model_selection import train_test_split
 # Load dataset
 df = pd.read_csv("disease_diagnosis.csv")
 
+
 # Remove Patient_ID
 df = df.drop("Patient_ID", axis=1)
 
