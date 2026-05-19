@@ -92,7 +92,7 @@ http://localhost:8501
 This system is for educational purposes only and should not be used for real medical diagnosis. Always consult a certified medical professional.  
 
 ## 👨‍💻 Author
-Vineet Rajput  
+Vineet Rajput, Anushree Mishra, Archana Yadav, Padma Narayan Mishra
 
 ## 📌 Project Type
 Machine Learning Academic Project
