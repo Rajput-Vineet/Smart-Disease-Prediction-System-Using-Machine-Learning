@@ -59,13 +59,8 @@ print(df.head())
 X = df.drop(['Diagnosis', 'Severity'], axis=1)
 y_class = df['Diagnosis']
 
-# Define regression target separately
-
-y_reg = df['Severity']
-
 print("Features shape:", X.shape)
 print("Classification target shape:", y_class.shape)
-print("Regression target shape:", y_reg.shape)
 
 from sklearn.preprocessing import StandardScaler
 
