@@ -2,6 +2,7 @@
 
 An end-to-end **Machine Learning-based Disease Prediction System** that predicts diseases based on patient symptoms and health parameters. The project includes a complete ML pipeline, model comparison, evaluation, and deployment using Streamlit.
 
+🔗 Live App: https://smart-disease-prediction-system-using-machine-learning-cvhyy2r.streamlit.app
 ---
 
 ## 🚀 Overview
