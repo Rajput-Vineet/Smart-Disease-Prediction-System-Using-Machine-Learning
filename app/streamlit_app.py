@@ -414,11 +414,36 @@ clicked = st.button("⚡  Run Diagnostic Analysis")
 # -----------------------------------------------
 
 if clicked:
+    # -------------------------------
+    # Input validation 🔥 (Improved)
+    # -------------------------------
+
     if not bp or not re.match(r'^\d{2,3}/\d{2,3}$', bp):
-        st.error("⚠️  Please enter Blood Pressure in the format **120/80**")
+        st.error("⚠️ Please enter Blood Pressure in format 120/80")
         st.stop()
 
     systolic, diastolic = map(int, bp.split('/'))
+
+    # Clinical validation
+    if systolic < 70 or systolic > 200:
+        st.error("Invalid systolic BP")
+        st.stop()
+
+    if diastolic < 40 or diastolic > 130:
+        st.error("Invalid diastolic BP")
+        st.stop()
+
+    if oxygen < 80 or oxygen > 100:
+        st.error("SpO₂ must be between 80–100%")
+        st.stop()
+
+    if temperature < 34 or temperature > 42:
+        st.error("Temperature out of clinical range")
+        st.stop()
+
+    if heart_rate < 40 or heart_rate > 180:
+        st.error("Invalid heart rate")
+        st.stop()
 
     input_data = pd.DataFrame([{
         'Age': age,
