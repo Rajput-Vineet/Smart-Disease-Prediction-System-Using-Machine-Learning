@@ -175,3 +175,24 @@ print("\n✅ Model and preprocessing objects saved successfully!")
 # -------------------------------
 sample_probs = best_model.predict_proba(X_test[:1])
 print("\n📊 Prediction Probabilities:\n", sample_probs)
+
+
+# -------------------------------
+# 🔥 SHAP Explainability
+# -------------------------------
+import shap
+
+print("\n🔍 Generating SHAP explanations...")
+
+if best_model_name == "Random Forest":
+    # Create explainer
+    explainer = shap.TreeExplainer(best_model)
+
+    # Use small sample (important for speed)
+    X_sample = X_test[:100]
+
+    # Compute SHAP values
+    shap_values = explainer.shap_values(X_sample)
+
+    # Summary plot
+    shap.summary_plot(shap_values, X_sample, feature_names=feature_names)
